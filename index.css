@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+a:hover{
+    color: green;
+}
+body{
+
+    font-family: 'Yaldevi', sans-serif;
+}
+h1, h2 ,h3{
+    font-family: 'Roboto',sans-serif;
+}
+h2{
+    color: rgb(11, 18, 34);
+    font-size: 40px;
+    padding: 10px;
+}
+.sticky{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+.content_heading div{
+    width: 300px;
+    height: 6px;
+    background-color: rgb(49, 104, 233);
+    border-radius: 5px;
+}
+.header{
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+  }
+
+.header_name h1{
+    color: darkblue;
+    font-size: 25px;
+    
+}
+
+.header_name h1 span{
+    color: skyblue;
+}
+.side_nav{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+  
+    top: 69px;
+    height: 700px;
+    background-color: rgb(11,18,34);
+ 
+    z-index: 0;
+  
+    margin-left: -1700px;
+    width: 100%;
+  
+    padding: 70px;
+    animation: side_nav_anim 2s ease;
+    transition: 2s;
+  
+  }
+  
+  
+  .side_nav_container{
+    width: fit-content;
+    margin: auto;
+    display: contents;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  .side_nav_button{
+    z-index: 10;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 5px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  
+  .side_nav_button .black{
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  
+  .side_nav_button  .contain .bar{
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    background-color: black;
+  
+  }
+  .side_nav_button  .contain{
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  
+  }
+  .side_nav_button .active{
+    flex-direction: row;
+    margin-left: 5px;
+    width: 30px;
+  }
+  .side_nav2{
+    margin-left: 0px;
+    transition: 2s;
+  }
+  .side_nav_container{
+    width: fit-content;
+    margin: auto;
+    display: contents;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+  }
+  .side_nav_container .social{
+    width: 100%;
+    margin: 70px auto;
+  }
+
+  .content2{
+    top: 700px;
+    transition: 2s;
+}
+  
+
+
+
+.social ul li {
+    text-align: center;
+    margin: 20px 30px;
+    list-style: none;
+}
+.social ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.social ul li a:hover{
+    color: green;
+    border-bottom: 1px solid gray;
+}
+.social ul li h4{
+    display: inline-block;
+    padding: 15px;
+    font-size: 30px;
+
+}
+.social{
+    margin-top: 60px;
+}
+.content{
+    z-index: -1;
+    position: absolute;
+    top: 69px;
+}
+.content_header{
+    position:relative ;
+    width: 100%;
+   /* background-image:url( "S.png");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 40px;
+
+    height: 700px;
+    margin: auto;
+   
+    
+}
+.content_header1{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    height: 700px;
+    background-color:cadetblue;
+    animation: header_zoom 2s ease;
+ 
+}
+.content_header2{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    height: 700px;
+    background-color: rgb(11, 18, 34);
+    clip-path: polygon(50% 0%, 100% 0, 100% 47%, 0 89%, 0 24%);
+}
+.content_header .header1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+.header1 h1,.header1 h3{
+    margin-top: 20%;
+}
+.content_header div h3{
+    font-size: 20px;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    color: transparent;
+    animation: text_color 1s ease forwards;
+    animation-delay: 1s;
+}
+.content_header div h1{
+    font-size: 60px;
+    color: blue;
+    
+}
+.content_header div h3{
+    color: rgb(92, 3, 62);
+    font-size: 40px;
+}
+.content_header div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(11, 18, 34);
+    animation: text_revel_box 2s ease;
+    animation-delay: 1s;
+}
+
+.content_about{
+    text-align: left;
+
+}
+.content_heading{
+    padding-left: 20px;
+    font-size: 30px;
+    margin: 50px;
+ 
+}
+
+.about_photo{
+    width: 0%;
+    height: 0%;
+    margin-right: 200px;
+ 
+}
+.photo_container{
+    margin: auto;
+    margin-left: 10px;
+   /* border: 1px solid black;*/
+
+}
+.about_photo1{
+    width: 100%;
+    height: 100%;
+    animation: photo_zoom 2s ease;
+    animation-delay: 0s;
+
+}
+.about_photo img{
+    height: 75%;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.content_container{
+    display: flex;
+    justify-content: space-around;
+}
+.content_container .content_para p{
+    margin-top: 25%;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+.content_container>div{
+    text-align: center;
+    width: 49%;
+    padding: 30px;
+
+}
+.content_paragraph{
+    width: 100%;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.skills{
+    padding: 30px 0 30px; 
+}
+.progress_bar{
+    display: flex;
+    margin: 40px;
+    justify-content: space-evenly;
+}
+.progress_bar ul{
+    width: 100%;
+}
+.progress_bar ul li div{
+    position: relative;
+    margin: 10px;
+    height: 10px;
+    background-color: rgb(220, 232, 248);  
+}
+.progress_bar ul li .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.progress_bar ul li  div h6{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color:rgb(20,157,221);
+}
+.progress_bar ul li div .percentage_html{
+    width: 100%;
+}
+
+.progress_bar ul li div .percentage_css{
+    width: 100%;
+}
+.progress_bar ul li div .percentage_js{
+    width: 75%;
+}
+.progress_bar ul li div .percentage_bs{
+    width: 50%;
+}
+.progress_bar ul li div .percentage_python{
+    width: 90%;
+}
+.progress_bar ul li div .percentage_django{
+    width: 75%;
+}
+.progress_bar ul li div .percentage_gimp{
+    width: 50%;
+}
+.progress_bar ul li div .percentage_seo{
+    width: 50%;
+}
+
+/*-----------------*/
+.progress_bar ul li div .percentage_htmlx{
+    width: 100%;
+    animation: progress100 4s ;
+}
+
+.progress_bar ul li div .percentage_gimpx{
+    width: 50%;
+    animation: progress50 4s;
+}
+.progress_bar ul li div .percentage_seox{
+    width: 50%;
+    animation: progress50 4s;
+}
+.progress_bar ul li div .percentage_cssx{
+    width: 100%;
+    animation: progress100 4s ;
+}
+.progress_bar ul li div .percentage_jsx{
+    width: 75%;
+    animation: progress75 4s;
+}
+.progress_bar ul li div .percentage_bsx{
+    width: 50%;
+    animation: progress50 4s;
+}
+.progress_bar ul li div .percentage_pythonx{
+    width: 90%;
+    animation: progress90 4s;
+}
+.progress_bar ul li div .percentage_djangox{
+    width: 75%;
+    animation: progress75 4s;
+}
+
+
+/*-------------------------*/
+
+.progress_bar ul  {
+    list-style: none;
+}
+.progress_bar ul li{
+    margin: 10px;
+}
+/* ========================*/
+#services, #about, #skills, #contact{
+    margin: 0px 100px 100px 100px;
+}
+
+.services_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px;
+    flex-basis: 1;
+}
+.services_container .section1,.services_container .section2{
+
+    margin: 0px auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ ;
+    padding: 0px;
+    flex-basis: 1;
+}
+.services_container .common, .services_container .common2, .services_container .common3,.services_container .common4{
+    background-color: rgb(49, 104, 233);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    
+    clip-path: polygon(0% 15%, 15% 15%, 11% 0, 89% 0, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 89% 100%, 12% 100%, 15% 85%, 0% 85%);
+}
+.common1{
+    animation: services_anim 2s ease;
+    animation-delay: .5s;
+ 
+}
+.services_container section div{
+    width: 200px;
+
+    text-align: center;
+    margin: auto;
+}
+
+.services_container div i{
+    margin: auto;
+    margin-top: 40%;
+    font-size: 40px;
+    color: white;
+  
+   
+}
+
+/*==================*/
+
+.contact_paragraph{
+    width: 100%;
+    margin: 30px ;
+}
+.contact form{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact_paragraph input[type=text ] {
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 50%;
+    font-size: 20px;
+    padding: 20px;
+    margin: 8px;
+  }
+  .contact_paragraph input[type=email ] {
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 50%;
+    font-size: 20px;
+    padding: 20px;
+    margin: 8px;
+  }
+  button{
+    background-color: rgb(49, 104, 233);
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    padding: 20px;
+    margin: 8px;
+  }
+
+ button:hover{
+    cursor: pointer;
+    background-color:rgb(11, 18, 34) ;
+    color: white;
+  }
+
+  .contact_paragraph div{
+    display: flex;
+    margin-top: 30px;
+
+  }
+
+  .contact_paragraph div h1{
+      margin-right: 20px;
+      font-size: 25px;
+  }
+
+/* media query*/ 
+@media only screen and (max-width:1150px) {
+    .header{
+        z-index: 1;
+        padding-left: 200px;
+        background-color: white;
+    }
+    #services, #about, #skills, #contact{
+        margin: 0px 30px 30px 30px;
+    }
+   
+    .content{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin-top: 70px;
+    }
+    .content_header{
+        width: 100%;
+        left: 0%;
+     
+    }
+    .about_photo img{
+        height: 100%;
+        width: 100%;
+    }
+   
+    .content_container .content_para p{
+        margin-top: 20px;
+    }
+
+    .content_container{
+        flex-direction: column;
+    }
+    .content_container>div{
+        margin: auto;
+        text-align: center;
+        width: 75%;
+    }
+    .progress_bar{
+        flex-direction: column;
+    }
+    .services_container .section1,.services_container .section2{
+        flex-direction: column;
+    }
+    
+    .contact_container{
+        flex-direction: column;
+       
+    }
+
+ 
+}
+/*==================================*/
+@media only screen and (max-width:600px) {
+    body{
+        margin: 0;
+    }
+    .header{
+        z-index: 1;
+        padding-left: 200px;
+        background-color: white;
+    }
+    .content_container{
+        margin: -50px;
+    }
+
+ 
+    .content{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin-top: 70px;
+    }
+    .content2{
+        top: 700px;
+        transition: 2s;
+    }
+
+    .header1 h1, .header1 h3{
+        margin-top: 50%;
+     
+    }
+    .content_container{
+        flex-direction: column;
+    }
+
+
+    .services_container{
+        flex-direction: column;
+    }
+
+    .content_paragraph{
+        margin: auto;
+        width: 80%;
+    }
+
+}
+/*============================*/
+
+/*-------keyframes +++++++++++*/
+@keyframes text_revel_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+
+    }
+}
+@keyframes text_color {
+    100%{
+        color: rgb(29, 187, 250);
+        background-color: white;
+        border-radius: 5px ;
+        padding: 0 30px;
+    }
+    
+}
+@keyframes progress100{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%
+    }
+}
+@keyframes progress75{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%
+    }
+}
+@keyframes progress50{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%
+    }
+}
+@keyframes progress90{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%
+    }
+}
+@keyframes side_nav_anim{
+    0%{
+       left : -500px;
+    }
+    100%{
+       left : 0;
+    }
+}
+@keyframes photo_zoom{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes header_zoom{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes services_anim{
+    0%{
+       height: 0px;
+       width: 0px;
+    }
+    50%{
+        height: 175px;
+        width: 175px;
+    }
+    100%{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/*------end-keyframes +++++++++++*/
+
+
+
