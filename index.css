@@ -469,7 +469,7 @@ h2{
 
 .contact_paragraph{
     width: 100%;
-    margin: 30px ;
+ 
 }
 .contact form{
     margin-top: 100px;
@@ -478,7 +478,7 @@ h2{
 .contact_paragraph input[type=text ] {
     border: none;
     border-bottom: 2px solid gray;
-    width: 50%;
+    width: 400px;
     font-size: 20px;
     padding: 20px;
     margin: 8px;
@@ -486,7 +486,7 @@ h2{
   .contact_paragraph input[type=email ] {
     border: none;
     border-bottom: 2px solid gray;
-    width: 50%;
+    width: 400px;
     font-size: 20px;
     padding: 20px;
     margin: 8px;
